@@ -131,19 +131,20 @@ function option2(buttonn,symbolinput)
 				
 			if (((row == count6)&&(col ==count3)))
 			{
-			array[row][col]= 'X';
+			array[row][col]= turtle;
 			
 			}
+			/*how to make 'O' follow 'X' by increasing tha appropriate counter inside the if below?*/
 			else if (((row <= count6)&&(col <=count3)))
 				{
-				array[row][col]= 'O';
+				array[row][col]= usedspace;
 				}
 
 				
 				
 			else  if ((((row >= count6)||(col >= count3))))
 			{
-			array[row][col]='.';
+			array[row][col]=gameboardSymbol;
 			}
 			
 			}//end else if 
